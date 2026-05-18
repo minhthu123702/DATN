@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+.requirement-only-box {
+  height: 520px;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e40af);
+  color: white;
+  padding: 38px 60px;
+}
+.requirement-only-box {
+  height: 520px;
+}
+button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 13px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+.hero h1 {
+  margin: 8px 0 12px;
+  font-size: 34px;
+}
+
+.hero p {
+  max-width: 950px;
+  line-height: 1.6;
+  color: #dbeafe;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 24px;
+  padding: 28px 60px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+.input-panel h2,
+.result-panel h2,
+.table-card h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+select,
+textarea,
+input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 11px 12px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.requirement-box {
+  height: 170px;
+}
+
+.schema-box {
+  height: 270px;
+  font-family: Consolas, monospace;
+  font-size: 13px;
+  background: #f8fafc;
+}
+
+button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 13px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.secondary-btn {
+  background: #16a34a;
+  white-space: nowrap;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.empty-card {
+  background: white;
+  border: 2px dashed #cbd5e1;
+  border-radius: 18px;
+  padding: 36px;
+  color: #64748b;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.result-header p {
+  margin: 4px 0 0;
+  color: #64748b;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.metric-card {
+  background: #eff6ff;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.metric-card span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.metric-card strong {
+  display: block;
+  margin-top: 6px;
+  color: #1d4ed8;
+  font-size: 26px;
+}
+
+.branches {
+  margin-top: 22px;
+}
+
+.branch-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.branch-list span {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.schema-preview {
+  margin-top: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.schema-preview summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.schema-preview pre {
+  overflow-x: auto;
+  font-size: 13px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 950px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+th {
+  background: #f8fafc;
+  color: #334155;
+  white-space: nowrap;
+}
+
+.pass {
+  background: #dcfce7;
+  color: #166534;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.fail {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .hero {
+    padding: 32px 20px;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
